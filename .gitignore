@@ -1,0 +1,5 @@
+.env
+.vscode
+./composer.json
+./composer.lock
+./vender
