@@ -1,0 +1,31 @@
+#searchBar{
+    text-align: center;
+}
+
+.iframe-parent{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+
+}
+
+.iframe-child{
+    text-align: center;
+    width: 20%;
+    /* overflow: hidden; */
+}
+
+.iframe-child > iframe{
+    width: 320px;
+    height: 180px;
+    /* border: none; */
+}
+
+#error-h1{
+    text-align: center;
+}
