@@ -12,15 +12,6 @@
 <body>
     <?php
     session_start();
-    $_SESSION['test'] = "100";
-    if (($_SESSION['selectedMode']) == NULL) {
-        echo "null<br>";
-        $_SESSION['selectedMode'] = "titleName";
-    }
-    echo var_dump($_SESSION['selectedMode']);
-    session_write_close();
-
-
     ?>
 
     <form action="" method="post" id="searchBar">
@@ -76,7 +67,7 @@
             echo $selectedMode;
 
 
-            $_SESSION['selectedMode'] = "titleURL";
+            $_SESSION['selectedMode'] = $selectedMode;
 
             //動画検索
             if (!empty($_POST["searchSubmit"])) {
