@@ -9,19 +9,13 @@
 
 <body>
     <h1>タイムスタンプ編集</h1>
-    <form action="" method="post" id="videoDuration">
-        <input type="text" value="00:00" readonly>
-    </form>
-
-
     <?php
     $videoId = $_GET['v'];
     // echo $videoId;
-    
     $videoURL = "https://www.youtube.com/embed/" . $videoId;
     ?>
     <iframe id="videoIframe" title="YouTube video Player" width="1280" height="720" type="text/html"
-        src="<?php echo $videoURL . "?start=1"; ?>" frameborder="0"></iframe>
+        src="<?php echo $videoURL . "?start=1"; ?>" frameborder="0"></iframe><br>
 
     <button id="timeStampButton">タイムスタンプ記入</button>
 
@@ -36,6 +30,7 @@
             console.log(videoDuration[0].value);
         }
 
+        //タイムスタンプ追加
         var timeStampButton = document.getElementById("timeStampButton");
         timeStampButton.addEventListener('click', function () {
             alert("test");

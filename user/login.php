@@ -8,8 +8,11 @@
 </head>
 
 <body>
-    <a href="./login.php">
-        <button>move to login</button>
+    <a href="./connectDB.php">
+        <button>connectDB</button>
+    </a>
+    <a href="./search.php">
+        <button>searchHome</button>
     </a>
 
 </body>

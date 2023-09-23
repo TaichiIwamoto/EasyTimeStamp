@@ -1,5 +1,7 @@
-./.env
+# .gitignore
+*.env
 ./.vscode
-./composer.json
-./composer.lock
-./vender
+vendor/
+.vscode/
+composer.json
+composer.lock
