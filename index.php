@@ -8,8 +8,12 @@
 </head>
 
 <body>
-    <a href="./login.php">
+    <a href="./user/login.php">
         <button>move to login</button>
+    </a>
+
+    <a href="var\www\html\phpMyAdmin\index.php">
+        <button>phpmyadmin</button>
     </a>
 
 </body>
