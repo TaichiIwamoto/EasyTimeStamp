@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="search.css" type="text/css">
-    <title>ポチスタ</title>
+    <title>ポチスタ-検索</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
@@ -65,8 +65,6 @@
 
             $selectedMode = isset($_POST['searchMode']) ? $_POST['searchMode'] : 'titleName'; // POSTされたselectedModeを取得    
             echo $selectedMode;
-
-
             $_SESSION['selectedMode'] = $selectedMode;
 
             //動画検索
@@ -130,7 +128,6 @@
                     if (!empty($_POST["searchText"])) {
                         $videoId = str_replace("https://www.youtube.com/watch?v=", "", $_POST['searchText']);
                         $videoURL = "https://www.youtube.com/embed/" . $videoId;
-
                         ?>
                 <iframe id="videoIframe" title="YouTube video Player" width="1280" height="720" type="text/html"
                     src="<?php echo $videoURL . "?start=1"; ?>" frameborder="0"></iframe><br>
